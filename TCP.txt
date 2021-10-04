@@ -1,0 +1,102 @@
+___________________________________
+SUPER SIMPLE FREETAKSERVER PROTOCOL
+
+INITIAL[Windows]
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="S-1-5-21-1568504889-667903775-1938598950-1001" type="a-f-G-U-C-I" time="2021-10-03T21:05:38.15Z" start="2021-10-03T21:05:38.15Z" stale="2021-10-03T21:11:53.15Z" how="h-g-i-g-o">
+   <point lat="0" lon="0" hae="0" ce="9999999" le="9999999" />
+   <detail>
+      <takv version="4.1.0.231" platform="WinTAK-CIV" os="Microsoft Windows 10 Pro" device="System manufacturer System Product Name" />
+      <contact callsign="MANIAC" endpoint="*:-1:stcp" />
+      <uid Droid="MANIAC" />
+      <__group name="Cyan" role="Team Member" />
+      <status battery="100" />
+      <track course="0.00000000" speed="0.00000000" />
+   </detail>
+</event>
+
+--------------------------------------------------------------------------------
+
+PING[Windows]
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="S-1-5-21-1568504889-667903775-1938598950-1001-ping" type="t-x-c-t" time="2021-10-03T21:05:54.571Z" start="2021-10-03T21:05:54.571Z" stale="2021-10-03T21:06:04.571Z" how="m-g">
+   <point lat="0.00000000" lon="0.00000000" hae="0.00000000" ce="9999999" le="9999999" />
+   <detail />
+</event>
+
+
+========================================================================================
+
+
+INITIAL[Android]
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="ANDROID-862939032310654" type="a-f-G-U-C" time="2021-10-03T16:30:22.163Z" start="2021-10-03T16:30:22.163Z" stale="2021-10-03T16:36:37.163Z" how="h-g-i-g-o">
+   <point lat="0.0" lon="0.0" hae="9999999.0" ce="9999999.0" le="9999999.0" />
+   <detail>
+      <takv os="28" version="4.3.0.0 (1).1-CIV" device="HUAWEI VKY-L09" platform="ATAK-CIV" />
+      <contact endpoint="*:-1:stcp" callsign="MAZDA" />
+      <uid Droid="MAZDA" />
+      <__group role="Team Member" name="Cyan" />
+      <status battery="0" />
+      <track course="0.0" speed="0.0" />
+   </detail>
+</event>
+
+--------------------------------------------------------------------------------
+
+PING[Android]
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="ANDROID-862939032310654-ping" type="t-x-c-t" time="2021-10-03T16:30:43.334Z" start="2021-10-03T16:30:43.334Z" stale="2021-10-03T16:30:53.334Z" how="m-g">
+   <point lat="0.00000000" lon="0.00000000" hae="0.00000000" ce="9999999" le="9999999" />
+   <detail />
+</event>
+
+
+--------------------------------------------------------------------------------
+
+
+GeoChat FROM SERVER TO DEVICE [Android sent Roger to MANIAC on WinTak]
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="GeoChat.ANDROID-862939032310654.MANIAC.1a432d03-9f85-4966-a5d5-6d75914d657e" type="b-t-f" how="h-g-i-g-o" start="2021-10-03T21:13:41.157Z" time="2021-10-03T21:13:41.157Z" stale="2021-10-04T21:13:41.157Z">
+   <detail>
+      <__chat id="S-1-5-21-1568504889-667903775-1938598950-1001" parent="RootContactGroup" chatroom="MANIAC" groupOwner="false">
+         <chatgrp uid0="ANDROID-862939032310654" uid1="S-1-5-21-1568504889-667903775-1938598950-1001" id="S-1-5-21-1568504889-667903775-1938598950-1001" />
+      </__chat>
+      <link uid="ANDROID-862939032310654" relation="p-p" type="a-f-G-U-C" />
+      <remarks time="2021-10-03T21:13:41.157Z" source="BAO.F.ATAK.ANDROID-862939032310654" to="S-1-5-21-1568504889-667903775-1938598950-1001">Roger</remarks>
+      <__serverdestination destinations="172.20.10.6:4242:tcp:ANDROID-862939032310654" />
+      <marti>
+         <dest callsign="MANIAC" />
+         <dest />
+      </marti>
+   </detail>
+   <point le="9999999.0" ce="9999999.0" hae="9999999.0" lon="0.0" lat="0.0" />
+</event>
+
+--------------------------------------------------------------------------------
+
+
+Groupchat FROM SERVER TO ALL DEVICES
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="GeoChat.ANDROID-862939032310654.All Chat Rooms.93ffcbca-34d3-4f93-916a-90f61402c9d3" type="b-t-f" how="h-g-i-g-o" start="2021-10-03T23:31:54.436Z" time="2021-10-03T23:31:54.436Z" stale="2021-10-04T23:31:54.436Z">
+   <detail>
+      <__chat id="All Chat Rooms" parent="RootContactGroup" chatroom="All Chat Rooms" groupOwner="false">
+         <chatgrp uid0="ANDROID-862939032310654" uid1="All Chat Rooms" id="All Chat Rooms" />
+      </__chat>
+      <link uid="ANDROID-862939032310654" relation="p-p" type="a-f-G-U-C" />
+      <remarks time="2021-10-03T23:31:54.436Z" source="BAO.F.ATAK.ANDROID-862939032310654" to="All Chat Rooms">Roger</remarks>
+      <__serverdestination destinations="10.0.0.20:4242:tcp:ANDROID-862939032310654" />
+      <marti>
+         <dest>
+            <callsign />
+         </dest>
+      </marti>
+   </detail>
+   <point le="9999999.0" ce="9999999.0" hae="1101.9885969400468" lon="26.081360392642274" lat="-32.58361733297825" />
+</event>

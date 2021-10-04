@@ -1,0 +1,14 @@
+
+Esp8266 TCP to ATAK as a sensor
+
+commands via sending the device text such as "open" open an object? other methods of sending data?
+
+send location as a set variable in xml protobuf
+
+works on FTS 1.9.5
+
+ESP8266 version
+
+GPS version using arduino and GSM module
+
+https://www.freeformatter.com/xml-formatter.html#ad-output
