@@ -1,0 +1,105 @@
+
+Step 1
+
+The device connects via long TCP connection and sends a ping COT [t-x-c-t].
+
+Step 2
+
+Then after 10s it sends an update COT [a-f-G-U-C-I].
+
+Step 3
+
+Then for every 8 ping COTS 1 update COT will be sent in a loop as long as the TCP connection is active.
+
+--
+
+If disconnected the device will keep trying to connect.
+
+Once connected this process will start again [from step 1-3].
+
+Also in the example below the trigger word "Roger" was sent in the group chat to open a gate.
+
+
+--------------------------
+_______
+EXAMPLE
+
+
+Connecting..
+Connected to WiFi. IP:
+10.0.0.19
+TCP client started
+Client has been connected
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="S-1-5-21-1568504889-667903775-1938598950-20002-ping" type="t-x-c-t" time="2021-10-05T00:10:00.000Z" start="2021-10-05T00:10:00.000Z" stale="2021-10-05T00:30:00.000Z" how="m-g">
+   <point lat="0.00000000" lon="0.00000000" hae="0.00000000" ce="9999999" le="9999999" />
+   <detail />
+</event>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="4307aa57-256a-11ec-80bd-04d9f5387acd" type="t-x-d-d" how="h-g-i-g-o" start="2021-10-04T23:24:46.297967Z" time="2021-10-04T23:24:46.297967Z" stale="2021-10-04T23:25:46.297967Z">
+   <detail>
+      <link uid="S-1-5-21-1568504889-667903775-1938598950-20002-ping" relation="p-p" type="a-f-G-U-C" />
+   </detail>
+   <point le="9999999.0" ce="9999999.0" hae="9999999.0" lon="0" lat="0" />
+</event>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="4307aa57-256a-11ec-80bd-04d9f5387acd" type="t-x-d-d" how="h-g-i-g-o" start="2021-10-04T23:24:46.297967Z" time="2021-10-04T23:24:46.297967Z" stale="2021-10-04T23:25:46.297967Z">
+   <detail>
+      <link uid="S-1-5-21-1568504889-667903775-1938598950-20002-ping" relation="p-p" type="a-f-G-U-C" />
+   </detail>
+   <point le="9999999.0" ce="9999999.0" hae="9999999.0" lon="0" lat="0" />
+</event>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="S-1-5-21-1568504889-667903775-1938598950-20002" type="a-f-G-U-C-I" how="h-g-i-g-o" start="2021-10-05T00:10:00.000Z" time="2021-10-05T00:10:00.000Z" stale="2021-10-05T00:30:00.000Z">
+   <detail>
+      <__group name="Red" role="Team Member" />
+      <status battery="69" />
+      <takv version="1.0.0.3" platform="ESP8266TAK-CIV" device="ESP8266 Device using WinTAK COT" os="ESP8266 OS" />
+      <track course="0.00000000" speed="0.00000000" />
+      <contact callsign="callsign_20002" endpoint="*:-1:stcp" />
+      <uid Droid="Droid_20002" />
+      <precisionlocation />
+   </detail>
+   <point le="9999999" ce="9999999" hae="0" lon="0" lat="0" />
+</event>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="S-1-5-21-1568504889-667903775-1938598950-20002" type="a-f-G-U-C-I" how="h-g-i-g-o" start="2021-10-05T00:10:00.000Z" time="2021-10-05T00:10:00.000Z" stale="2021-10-05T00:30:00.000Z">
+   <detail>
+      <__group name="Red" role="Team Member" />
+      <status battery="69" />
+      <takv version="1.0.0.3" platform="ESP8266TAK-CIV" device="ESP8266 Device using WinTAK COT" os="ESP8266 OS" />
+      <track course="0.00000000" speed="0.00000000" />
+      <contact callsign="callsign_20002" endpoint="*:-1:stcp" />
+      <uid Droid="Droid_20002" />
+      <precisionlocation />
+   </detail>
+   <point le="9999999" ce="9999999" hae="0" lon="0" lat="0" />
+</event>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="takPong" type="t-x-c-t-r" how="h-g-i-g-o" start="2021-10-04T23:25:06.599808Z" time="2021-10-04T23:25:06.599808Z" stale="2021-10-04T23:26:06.599808Z">
+   <point le="9999999.0" ce="9999999.0" hae="9999999.0" lon="0" lat="0" />
+</event>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<event version="2.0" uid="GeoChat.ANDROID-862939032310654.All Chat Rooms.59672ebb-d642-4682-993d-0390ab00c2cc" type="b-t-f" how="h-g-i-g-o" start="2021-10-04T23:25:44.101Z" time="2021-10-04T23:25:44.101Z" stale="2021-10-05T23:25:44.101Z">
+   <detail>
+      <__chat id="All Chat Rooms" parent="RootContactGroup" chatroom="All Chat Rooms" groupOwner="false">
+         <chatgrp uid0="ANDROID-862939032310654" uid1="All Chat Rooms" id="All Chat Rooms" />
+      </__chat>
+      <link uid="ANDROID-862939032310654" relation="p-p" type="a-f-G-U-C" />
+      <remarks time="2021-10-04T23:25:44.101Z" source="BAO.F.ATAK.ANDROID-862939032310654" to="All Chat Rooms">Roger</remarks>
+      <__serverdestination destinations="10.0.0.20:4242:tcp:ANDROID-862939032310654" />
+      <marti>
+         <dest>
+            <callsign />
+         </dest>
+      </marti>
+   </detail>
+   <point le="9999999.0" ce="9999999.0" hae="9999999.0" lon="24.445662254654078" lat="-39.802352458913205" />
+</event>
