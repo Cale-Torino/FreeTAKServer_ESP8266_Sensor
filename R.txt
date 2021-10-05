@@ -12,3 +12,10 @@ ESP8266 version
 GPS version using arduino and GSM module
 
 https://www.freeformatter.com/xml-formatter.html#ad-output
+
+tcp.port == 8087
+normal
+
+tcp.port == 4242
+geochat
+
