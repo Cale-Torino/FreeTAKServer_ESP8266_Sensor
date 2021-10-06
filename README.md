@@ -16,19 +16,19 @@ The GPS coordinates are hardcoded for the `ESP8266` but an arduino with a GSM mo
 
 ## Local TCP example
 
-TCP communication via port 4242 on the local LAN network (unsecure)
+TCP communication via port **_4242_** on the local LAN network (unsecure)
 
 [<img src="img/local.jpg" width="500"/>](img/local.jpg)
 
 ## Internet TCP example
 
-TCP communication via port 8087 over the internet (unsecure)
+TCP communication via port **_8087_** over the internet (unsecure)
 
 [<img src="img/internet.jpg" width="500"/>](img/internet.jpg)
 
 ## Internet SSL example
 
-SSL communication via port 8089 over the internet (secure)
+SSL communication via port **_8089_** over the internet (secure)
 
 [<img src="img/ssl.jpg" width="500"/>](img/ssl.jpg)
 
