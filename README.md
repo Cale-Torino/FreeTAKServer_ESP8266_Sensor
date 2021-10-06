@@ -1,17 +1,36 @@
-# FreeTAKServer_ESP8266_Sensor
-A repository containing the Arduino sketch for the ESP8266. 
+# FreeTAKServer ESP8266 Sensor
 
-It allows the ESP8266 to show up on the FreeTAKServer and can control event triggers using keywords like "open" via the group chat console in ATAK-CIV and WINTAK-CIV.
+A repository containing the Arduino sketch for the `ESP8266`. 
+
+It allows the `ESP8266` to show up on the `FreeTAKServer` and can control event triggers using keywords like "open" via the group chat console in `ATAK-CIV` and `WINTAK-CIV`.
 
 ## Quick example use cases
 
-A Gate sensor shows up on ATAK-CIV in a specific geolocation It has an ESP8266 controlling the motor. 
+A Gate sensor shows up on `ATAK-CIV` in a specific geolocation It has an `ESP8266` controlling the motor. 
 
 Now I can type open in the group chat on my Mobile device and the gate will open.
 
 Other examples are pyrotechnics for airsoft or an alarm alert connected to a magnetic reed switch or PIR sensor etc.
 
-The GPS coordinates are hardcoded for the esp8266 but an arduino with a GSM module can act as an affordable DIY GPS device with TX and RX support.
+The GPS coordinates are hardcoded for the `ESP8266` but an arduino with a GSM module can act as an affordable DIY GPS device with TX and RX support.
+
+## Local TCP example
+
+TCP communication via port 4242 on the local LAN network (unsecure)
+
+[<img src="img/local.jpg" width="500"/>](img/local.jpg)
+
+## Internet TCP example
+
+TCP communication via port 8087 over the internet (unsecure)
+
+[<img src="img/internet.jpg" width="500"/>](img/internet.jpg)
+
+## Internet SSL example
+
+SSL communication via port 8089 over the internet (secure)
+
+[<img src="img/ssl.jpg" width="500"/>](img/ssl.jpg)
 
 ## Notes
 
